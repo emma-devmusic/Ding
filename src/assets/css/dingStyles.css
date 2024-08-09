@@ -1,0 +1,391 @@
+:root {
+    --primary: #0E6FFF;
+    --secondary: #7752EB;
+    --light: #E8E2E2;
+    --dark: #212322;
+    --darksoft: #535353;
+    --outstanding: #ff9e0e;
+}
+
+/*
+==============================================================
+    UTILITIES
+==============================================================
+*/
+
+.container-xxl {
+    /* max-width: 100% !important; */
+}
+
+.text-outstanding {
+    color: var(--outstanding) !important;
+}
+
+.section-title h6::before, .section-title h6::after {
+    background: #ff9f0e9a;
+}
+
+
+/*
+==============================================================
+    NAVBAR
+==============================================================
+*/
+
+#logo2 {
+    border-radius: 50%;
+}
+
+#box-logo {
+    gap: .5rem;
+}
+#logo1 {
+    height: 3rem;
+}
+
+.text-logo{
+    color: var(--light);
+}
+.sticky-top .text-logo {
+    color: var(--secondary);
+}
+
+@media (max-width: 992px) {
+    .text-logo {
+        color: var(--secondary);
+    }
+    #logo1 {
+        display: none !important;
+    }
+    #logo2 {
+        display: block !important;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: white !important;
+}
+.navbar-light .navbar-nav .nav-link::before {
+    background: white !important;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link.active, .sticky-top.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link::before {
+    background: var(--secondary) !important;
+}
+
+
+
+/*
+==============================================================
+    HERO
+==============================================================
+*/
+
+.hero-header {
+    background-position: 0px 0px, bottom 190px right 10px, left 55% top -1px, left 45% bottom -1px, center bottom -1px ;    
+}
+
+
+
+.words {
+    color: var(--outstanding);
+}
+.service-item{
+    height: auto;
+}
+.service-item:hover {
+    background: linear-gradient(149deg, rgba(14,111,255,1) 0%, rgba(119,82,235,1) 100%) !important;
+}
+
+.team-item:hover::after {
+    background-color: rgba(14,111,255,1)
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    color: rgba(119,82,235,1) !important;
+}
+
+.footer {
+    background: 
+        url(../img/footer.png) center center no-repeat,
+        linear-gradient(149deg, rgba(14,111,255,1) 0%, rgba(119,82,235,1) 100%);
+}
+
+
+.back-to-top {
+    color: white !important;
+    background-color: rgba(119,82,235,1) !important;
+    border: 1px solid transparent;
+    padding: 0 !important;
+}
+
+
+/*
+==============================================================
+    ABOUT US
+==============================================================
+*/
+
+.btn-social-ding:hover i{
+    color: var(--light);
+}
+
+
+/*
+==============================================================
+    TEAM PROVISORIO
+==============================================================
+*/
+
+#team-provisorio {
+    margin: 10rem 0;
+}
+.box-team-provisorio .team-item .icons {
+    transform: translate(20px,10px);
+}
+
+.box-team-provisorio .team-item img {
+    object-fit: cover;
+    transform: translate(-10px,20px);
+}
+
+.emma {
+    z-index: 10;
+}
+.seba {
+    z-index: 9;
+}
+.lucas {
+    z-index: 8;
+}
+.marcos {
+    z-index: 7;
+}
+
+/*
+==============================================================
+    OUR TEAM
+==============================================================
+*/
+
+@media (max-width: 992px) {
+    .team-item img {
+        overflow: hidden !important;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #box-team {
+        /* transform: translate(-38px, 0px); */
+    }
+    .team-item::after {
+        width: 240px !important;
+    }
+}
+
+
+.team-item::after {
+    position: absolute;
+    content: "";
+    top: 3rem;
+    right: 3rem;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    transition: .5s;
+    z-index: -1;
+}
+/*
+==============================================================
+    PROJECTS
+==============================================================
+*/
+.second .img-fluid, .first .img-fluid {
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+/*
+==============================================================
+    PRICE
+==============================================================
+*/
+#price-section {
+    margin: 7rem 0;
+}
+#price-section h5 {
+    color: var(--darksoft);
+    transition: all .5s ease;
+
+}
+
+.card2 {
+    margin: .5rem .5rem;
+    max-width: 300px;
+    padding: 1rem;
+    transition: all .5s ease;
+    height: min-content;
+}
+
+.card2 i.frequency {
+    font-size: .8rem;
+    color: var(--dark);
+}
+
+.card2:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0,.1);
+    transition: all .5s ease;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.card2:hover h5 {
+    color: var(--secondary) !important;
+    transition: all .5s ease;
+
+}
+
+.card2:hover .price {
+    color: rgb(17, 195, 23);
+    transition: all .5s ease;
+}
+
+.price {
+    transition: all .5s ease;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--darksoft);
+}
+
+.price .currency {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.list-unstyled li {
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+    font-size: .9rem;
+}
+
+.media .fa-check {
+    color: var(--primary);
+}
+
+.media .fa-times {
+    color:rgb(192, 0, 0);
+}
+
+
+
+
+/*
+==============================================================
+    CONTACT US
+==============================================================
+*/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+#contact .container {
+    max-width: 1200px;
+}
+
+.box-contact {
+    border-radius: 10px;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    border: 1px solid white;
+    transition: all .3s ease;
+}
+
+.box-contact:hover {
+    box-shadow: 0 0 20px rgba(109, 0, 242, 0.591) !important;
+    transition: all.5s ease;
+    transform: translateY(-2px);
+    transition: all .3s ease;
+}
+
+.box-contact h5 {
+    color: var(--darksoft);
+}
+
+.box-contact .icon i{
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .container-box-contact {
+        gap: 2rem;
+    }
+    .box-contact:last-of-type {
+        margin-top: -2rem;
+    }
+}
+@media (min-width: 576px) and (max-width:700px) {
+    .container-box-contact {
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        /* transform: translateX(-70px); */
+    }
+}
+
+@media (max-width: 400px) {
+    .box-contact .icon i {
+        height: 45px;
+        width: 45px;
+    }
+    .box-contact {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+
+
+/*
+==============================================================
+    FOOTER
+==============================================================
+*/
+
+
+.footer-gallery img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: top;
+}
